@@ -1,0 +1,9 @@
+---
+applications:
+- name: riak-service-broker
+  memory: 512M
+  instances: 1
+  host: riak-service-broker
+  domain: app.ft3.cpgpaas.net
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: ./target/riak-service-broker.war

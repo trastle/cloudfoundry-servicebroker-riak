@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <servlet>
+        <servlet-name>Delegation-Servlet</servlet-name>
+        <servlet-class>org.cf.community.broker.web.DelegationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Delegation-Servlet</servlet-name>
+        <url-pattern>/gateway/v1/configurations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Delegation-Servlet</servlet-name>
+        <url-pattern>/gateway/v1/configurations/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- /control/install -->
+    <servlet>
+        <servlet-name>Riak-Broker-Install</servlet-name>
+        <servlet-class>org.cf.community.broker.web.InstallBrokerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Riak-Broker-Install</servlet-name>
+        <url-pattern>/control/install</url-pattern>
+    </servlet-mapping>
+
+</web-app>

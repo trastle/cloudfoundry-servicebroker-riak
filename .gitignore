@@ -1,0 +1,10 @@
+manifest.yml
+
+target/*
+*.class
+*~
+
+.idea
+.idea/*
+*.iml
+.DS_Store
