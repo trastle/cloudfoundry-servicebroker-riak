@@ -1,13 +1,13 @@
 # Riak-Service-Broker
 
 
-**WORK IN PROGRESS!!! NOT CURRENTLY FUNCTIONAL!!!**
+**WORK IN PROGRESS!!! CURRENTLY VERY, VERY BASIC!!!**
 
 ## Building the project
 
 To grab a copy of this project and and build it you'll need to do the following:
 
-    git clone git@gitlab.tools.cpgpaas.com:freighttrain/riak-service-broker.git
+    git clone https://github.com/trastle/cloudfoundry-servicebroker-riak.git
     cd riak-service-broker
     mvn clean package
 
@@ -31,7 +31,6 @@ In order for the service to authenticate with the UAA you will need to add the f
 
 Now go to the PaaS and have a look-see.
 
-  
 # Appendix: References
 
 * **Dependencies**
